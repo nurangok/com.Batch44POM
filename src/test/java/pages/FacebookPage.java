@@ -21,7 +21,7 @@ public class FacebookPage {
 
     @FindBy(name="login")
     public WebElement loginButonu;
-   @FindBy(xpath="//div[@class='_9kq2']")
+   @FindBy(xpath="//div[@class='_9ay7']")
     public WebElement girilemediYazisi;
 
 }
