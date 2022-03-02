@@ -10,7 +10,7 @@
 
 </suite>
 
-        <!--
+      <!--
         TestNG'de testlerimizi paralel calistirmak kolaydir
         ANCAK testNG raporlama yapmaz
         Eger rapor istiyorsaniz her bir test method'unuzu rapor alacak sekilde

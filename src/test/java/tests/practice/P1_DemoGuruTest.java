@@ -34,7 +34,7 @@ Perfect butonun goruntulendigini dogrulayin
             sendKeys(Keys.PAGE_DOWN).perform();
     extentTest.info("webElementler istenilen yere gonderildi");
     Assert.assertTrue(p1_demoGuruPage.perfectYazisi.isDisplayed());
-    extentTest.pass("Perfect yazisi goruldu...");
+    extentTest.pass("Perfect yazisi goruldu");
     ReusableMethods.waitFor(4);
   }
 }
