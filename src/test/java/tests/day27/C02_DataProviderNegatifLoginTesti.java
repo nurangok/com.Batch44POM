@@ -26,5 +26,7 @@ public class C02_DataProviderNegatifLoginTesti {
         hotelMyCampPage.loginButonu.click();
         Assert.assertTrue(hotelMyCampPage.girisYapilamadiYaziElementi.isDisplayed());
         Driver.closeDriver();
+
+        //deneme amacli degsiklik
     }
 }

@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HotelMyCampPage;
 import utilities.Driver;
@@ -50,10 +51,11 @@ public class C01_E2ETesting {
         hotelMyCampPage.bekle(1);
         // hotelMyCampPage.addHotelSaveButonu.click();
 
+        //Select select=new Select(hotelMyCampPage.addHotelDropdown);
+        select.selectByVisibleText("Hotel Type2");
 
-        //9. “Hotel was inserted successfully” textinin göründüğünü test edin.
-
-
-        //10. OK butonuna tıklayın.
+        hotelMyCampPage.addHotelSaveButonu.click();
+        Assert.assertTrue(hotelMyCampPage.basariliGirisOnayTexti.isDisplayed());
+        hotelMyCampPage.basariliGirisOnayTextiOKButonu.click();
     }
 }

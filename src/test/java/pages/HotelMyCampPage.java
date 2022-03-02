@@ -4,10 +4,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import org.w3c.dom.html.HTMLInputElement;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class HotelMyCampPage {
+
+
 
 
     public HotelMyCampPage(){
@@ -73,5 +76,9 @@ public class HotelMyCampPage {
         passwordBox.sendKeys(ConfigReader.getProperty("HMCValidPassword"));
         loginButonu.click();
     }
+    @FindBy (xpath = "//div[.='Hotel was inserted successfully']")
+    public WebElement basariliGirisOnayTexti;
 
+    @FindBy (xpath = "//button[@data-bb-handler='ok']")
+    public WebElement basariliGirisOnayTextiOKButonu;
 }
