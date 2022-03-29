@@ -17,7 +17,7 @@ public class C01_TestNGReports extends TestBaseRapor {
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
         extentTest.info("herokuapp sayfasina gidildi");
         Driver.getDriver().findElement(By.linkText("Click Here")).click();
-        extentTest.info("yeni window linkine tilandi");
+        extentTest.info("yeni window linkine tiklandi");
         ReusableMethods.switchToWindow("New Window");
         extentTest.info("reusable method kullanarak acilan iknci sayfaya gecildi");
         String expectedTitle="New Window";
